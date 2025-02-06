@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            #text{color:aqua}
+        </style>
+        <title>Introduction</title>
+    </head>
+    <body>
+        <h1>Change The HTML Content</h1>
+        <h2 id="hc">HELLO FRIENDS</h2>
+        <h3>Welcome to Javascript</h3>
+        <button type="button" onclick='document.getElementById("hc").innerHTML="Hello Anju"'>Anju</button>
+        <button type="button" onclick='document.getElementById("hc").innerHTML="Hello Mosquito"'>Mosquito</button>
+        <h1>Change in Attributes</h1>
+        <img id="image" src="red.jpeg" width="100" height="100"><br>
+        <br>
+        <button type="button" onclick='document.getElementById("image").src="green.png"'>GREEN</button>
+        <button type="button" onclick='document.getElementById("image").src="blue.jpg"'>BLUE</button>
+        <button type="button" onclick='document.getElementById("image").src="red.jpeg"'>RED</button>
+<h1>Change in CSS </h1>
+<h2 id="text">Introduction to Javascript</h2>
+<button type="button" onclick='document.getElementById("text").style.color="green"'>GREEN</button>
+<button type="button" onclick='document.getElementById("text").style.color="blue"'>BLUE</button>
+
+<h1>HIDE AND DISPLAY CONTENT</h1>
+<h2 id="hd">This will demonstrate the hiding and displaying the content</h2>
+<button type="button" onclick='document.getElementById("hd").style.display="none"'>Hide</button>
+<button type="button" onclick='document.getElementById("hd").style.display="block"'>Display</button>
+    </body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <h1>STRINGS-STRING OBJECT-STRING METHODS</h1>
+        <script>
+            var s1="Welcome to Strings in Java Script"
+            document.write("DOUBLE QUOTED STRING:",s1,"<br>");
+            var s2='String with single Quote with "Double Quotations"'
+            document.writeln("SINGLE QUOTED STRING:",s2,"<br>")
+            document.write(typeof s2,"<br>")
+            var s3=new String("This is String Object");
+            document.write("STRING OBJECT:",s3,"<br>")
+            document.write(typeof s3,"<br>")
+            document.writeln("<h1>String Methods</h1>");
+            document.writeln("<h2>")
+            document.writeln("s1=",s1,"<br>","s2=",s2,"<br>","s3=",s3,"<br>")
+            document.writeln("indexOf()- Position of o in s1 ",s1.indexOf("o"),"<br>");
+            document.writeln("lastindexOf()- Position of o in s1 ",s1.lastIndexOf("o"),"<br>");
+            document.writeln("indexOf() with one argument- Position of o in s1 ",s1.indexOf("o",6),"<br>");
+            document.writeln("search()- ",s1.search("o"),"<br>");
+            document.writeln("slice()- Extracting from  s1 ",s1.slice(0,9),"<br>");
+            document.writeln("slice()- Extracting from  s1 with Negative index- ",s1.slice(0,-5),"<br>");
+            document.writeln("substring()- Extracting from  s1 ",s1.substring(0,17),"<br>");
+            document.writeln("substr()- Extracting from  s1 ",s1.substr(0,10),"<br>");
+            document.writeln("replace()- Extracting from  s1 ",s1.replace("Java Script","JS"),"<br>");
+            var s4="welcome to java script"
+            var s5=s4.toUpperCase();
+            document.writeln(s5,"<br>");
+            document.writeln(s5.toLowerCase(),"<br>");
+            var s6="Hello!";
+            document.writeln(s6.concat(s6,s4),"<br>");
+            var s7="  JAVA SCRIPT ";
+            document.writeln("Length of s7 is ",s7.length,"<br>");
+            var s8=s7.trim();
+            document.writeln("Length of s7 is",s8.length,"<br>")
+            document.writeln("charAt()-",s1.charAt(5),"<br>");
+            document.writeln("charCodeAt()-",s1.charCodeAt(8),"<br>");
+            for(i=0;i<s8.length;i++){
+                document.writeln(s8[i]+"<br>");
+            }
+            
+        </script>
+    </body>
+</html>

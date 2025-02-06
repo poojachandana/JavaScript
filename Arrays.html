@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <h1>ARRAYS</h1>
+        <script>
+            var a = [10, 20, 30, 40];
+            document.write(a + "<br>");
+            document.writeln("Type of a: " + typeof a + "<br>"); 
+
+            var b = new Array(50, 60, 70, 80);
+            document.writeln(b + "<br>");
+
+            var c = [100];
+            document.writeln(c + "<br>");
+
+            var d = new Array(100); 
+            document.writeln("Array d: " + d + "<br>"); 
+
+            document.writeln("Length of array a is " + a.length + "<br>");
+            document.writeln("First Element: " + a[0] + "<br>");
+            document.writeln("Array a: " + a + "<br>");
+
+            var e = { "name": "abc", "rno": 123, "perc": 95 };
+            document.writeln("Name: " + e.name + "<br> Roll No: " + e.rno + "<br> Percentage: " + e.perc + "<br>");
+
+
+            for (var i = 0; i < a.length; i++) {
+                document.writeln("a[" + i + "] = " + a[i] + "<br>");
+            }
+            a[0]=100;
+            document.writeln("a="+a+"<br>")
+            document.writeln("Length of Array A is:"+a.length+"<br>")
+            delete a[1];
+            document.writeln("Length of Array A after Deleting Elements is "+a.length+"<br>")
+            for (var i = 0; i < a.length; i++) {
+                document.writeln("a[" + i + "] = " + a[i] + "<br>");
+            }
+            a[6]=200;
+            for (var i = 0; i < a.length; i++) {
+                document.writeln("a[" + i + "] = " + a[i] + "<br>");
+            }
+            var n=10;
+            document.writeln(typeof a+"<br>")
+            document.writeln(Array.isArray(n))
+        </script>
+    </body>
+</html>

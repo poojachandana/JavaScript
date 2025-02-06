@@ -1,0 +1,63 @@
+<!-- <!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            .res {
+                background-color: black;
+                color: white;
+            }
+        </style>
+        <script>
+            function age(){
+                if(document.getElementById("t1").value >= 18){
+                    document.getElementById("res").innerHTML = "Eligible for Vote";
+                }
+                else{
+                    document.getElementById("res").innerHTML = "Not Eligible for Vote";
+                }
+            }
+        </script>
+    </head>
+    <body>
+        <h1> Enter the age: <input type="text" id="t1"><br></h1>
+        <h1><button type="button" onclick="age()">Verify</button><br><br></h1>
+        <div id="res" class="res"></div>
+    </body>
+</html> -->
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            #res {
+                background-color:pink;
+                color:red;
+                font-size:30px;
+            }
+        </style>
+        <script>
+            function relation(){
+                if(document.getElementById("t1").value==document.getElementById("t2").value){
+                    document.getElementById("res").innerHTML = "BOTH ARE EQUAL";
+                }
+                else if(document.getElementById("t1").value>document.getElementById("t2").value)
+                {
+
+                    document.getElementById("res").innerHTML = "FIRST NUMBER IS GREATER THAN SECOND NUMBER";
+                }
+                else{
+                     document.getElementById("res").innerHTML = "FIRST NUMBER IS SMALLER THAN SECOND NUMBER";
+                   
+                }
+
+            }
+        </script>
+    </head>
+    <body>
+        <h1> Enter First Number: <input type="text" id="t1"><br></h1>
+        <h1> Enter Second Number: <input type="text" id="t2"><br></h1>
+        <h1><button type="button" onclick="relation()">Relate Two Numbers</button><br><br></h1>
+        <span id="res" ></span>
+    </body>
+</html>
+

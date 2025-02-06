@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <h1>NUMBER OBJECTS</h1>
+        <script>
+            var x=15;
+            var n=5.35446;
+            var y=new Number(15);
+            var z=new Number(15);
+            var s=x.toString()
+            var e=x.toExponential(2)
+            var f=n.toFixed(3)
+            var p=n.toPrecision(3)
+            document.write("Type of X:"+typeof x+"<br>")
+            document.write("Type of Y:"+typeof y+"<br>")
+            document.write("Type of Z:"+typeof z+"<br>")
+            document.write("Type of S:"+typeof s+"<br>")
+            document.write("Exponential Form:"+e+"<br>")
+            document.write("toFixed Function:"+f+"<br>")
+            document.write("Precision Function:"+p+"<br>")
+            document.write("X==Y:"+(x==y)+"<br>")
+            document.write("X===Y:"+(x===y)+"<br>")
+            document.write("Y==Z:"+(y==z)+"<br>")
+            var a=Number(e)
+            var b=parseInt(f)
+            var c=parseFloat(f)
+            document.write("Type of A:"+typeof a+"<br>")
+            document.write("Type of B:"+typeof b+"<br>"+"Value of B"+b+"<br>")
+            document.write("Type of C:"+typeof c+"<br>"+"Value of C"+c+"<br>")
+            document.write("<h1>NUMBER PROPERTIES</h1>");
+            document.write("Min_value:"+Number.MIN_VALUE+"<br>")
+            document.write("Max_value:"+Number.MAX_VALUE+"<br>")
+            document.write("positive_infinity:"+Number.POSITIVE_INFINITY+"<br>")
+            document.write("Negative_infinity:"+Number.NEGATIVE_INFINITY+"<br>")
+        </script>
+    </body>
+</html>
